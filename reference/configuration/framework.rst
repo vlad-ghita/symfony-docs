@@ -535,6 +535,10 @@ for a given key. The logs are made to the ``translation`` channel and at the ``d
 for level for keys where there is a translation in the fallback locale and the ``warning``
 level if there is no translation to use at all.
 
+To capture these logs in the ``prod`` environment, configure a
+:doc:`channel handler <logging-channel-handler>` in ``config_prod.yml`` for
+the ``translation`` channel and set its ``level`` to ``debug``.
+
 Full default Configuration
 --------------------------
 
